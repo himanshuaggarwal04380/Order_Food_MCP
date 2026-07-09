@@ -1,6 +1,5 @@
 from fastmcp import FastMCP
 from menu import get_menu
-from order import place_order, OrderLineItem, OrderError
 
 mcp = FastMCP("FoodOrderServer")
 
@@ -19,56 +18,6 @@ def get_menu_tool() -> list[dict]:
         for item in items
     ]
     
-@mcp.tool
-def place_order_tool(items: list[dict]) -> dict:
-    """
-    Place a food order and return a structured invoice.
-
-    Call this after the user has confirmed what they want to order.
-    'items' must be a list of objects, each with:
-      - item_id (string): the menu item's ID, from get_menu_tool
-      - quantity (integer): how many of that item, must be positive
-
-    Example: [{"item_id": "p1", "quantity": 2}, {"item_id": "dr1", "quantity": 1}]
-
-    Returns a structured invoice with per-line breakdown, subtotal, tax,
-    delivery fee, and grand total. Format the result as a clean, monospace
-    text invoice for the user — do not just describe it in prose.
-
-    If any item_id is invalid or a quantity is not positive, this tool
-    returns an error message instead of an invoice — relay that message
-    to the user clearly so they can correct their order.
-    """
-    try:
-        line_items = [
-            OrderLineItem(item_id=i["item_id"], quantity=i["quantity"])
-            for i in items
-        ]
-        invoice = place_order(line_items)
-    except OrderError as e:
-        return {"error": str(e)}
-    except (KeyError, TypeError) as e:
-        return {"error": f"Malformed order input: {e}"}
-
-    return {
-        "order_id": invoice.order_id,
-        "order_date": str(invoice.order_date),
-        "lines": [
-            {
-                "name": line.name,
-                "quantity": line.quantity,
-                "unit_price": str(line.unit_price),
-                "line_total": str(line.line_total),
-            }
-            for line in invoice.lines
-        ],
-        "subtotal": str(invoice.subtotal),
-        "tax_rate": str(invoice.tax_rate),
-        "tax_amount": str(invoice.tax_amount),
-        "delivery_fee": str(invoice.delivery_fee),
-        "total": str(invoice.total),
-    }
-
 
 if __name__ == "__main__":
     mcp.run()

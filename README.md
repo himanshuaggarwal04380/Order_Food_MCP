@@ -8,9 +8,9 @@
 |---|---|---|
 | p1 | Margherita Pizza | 299 |
 | p2 | Pepperoni Pizza | 349 |
-| b1 | Veggie Burger | 349 |
+| b1 | Veggie Burger | 99 |
 | b2 | Chicken Burger | 129 |
-| p3 | Farmhouse Pizza | 99 |
+| p3 | Farmhouse Pizza | 349 |
 | dr1 | Cold Coffee | 69 |
 | dr2 | Mango Shake | 79 |
 
