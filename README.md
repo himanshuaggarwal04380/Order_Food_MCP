@@ -25,11 +25,21 @@ Tests in `test_menu.py` cover:
 
 Run with:
 ```powershell
-uv run pytest -v
+uv run pytest test_menu.py -v
 ```
 
 ## Status
 
-- [x] Week 1: MCP fundamentals, hello-world server, local LLM verified
-- [x] Week 2: Menu data model, mock data, lookup function, tests passing
-- [ ] Week 3: `get_menu` MCP tool
+- [done] Week 1: MCP fundamentals, hello-world server, local LLM verified
+- [done] Week 2: Menu data model, mock data, lookup function, tests passing
+- [done] Week 3: get_menu MCP tool, tests, live LLM demo (Claude Desktop)
+- [ ] Week 4: Order logic (pricing, validation)
+
+## Week 3 Demo
+
+Verified `get_menu_tool` end-to-end in Claude Desktop: asked "What food can I order?" 
+in natural language (no explicit tool mention), and the LLM correctly called 
+`get_menu_tool` and returned the full 8-item menu in chat.
+
+Also verified via MCP Inspector: tool discoverable, returns valid JSON with ( cmd - npx @modelcontextprotocol/inspector uv run server.py )
+id/name/price for all 8 items.

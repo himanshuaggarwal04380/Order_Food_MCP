@@ -1,4 +1,5 @@
 from menu import MENU, get_menu, get_item_by_id
+from decimal import Decimal
 
 
 def test_menu_items_have_required_fields():
@@ -6,6 +7,7 @@ def test_menu_items_have_required_fields():
     for item in get_menu():
         assert item.id
         assert item.name
+        assert isinstance(item.price, Decimal)
         assert item.price > 0
 
 
