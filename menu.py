@@ -1,34 +1,49 @@
 from dataclasses import dataclass
 from decimal import Decimal
 
+from db import get_connection, init_db
+
 
 @dataclass
 class MenuItem:
     """Represents a single item on the menu."""
     id: str
     name: str
+    category: str
+    description: str
     price: Decimal
+    is_veg: str
 
 
-MENU: list[MenuItem] = [
-    MenuItem(id="p1", name="Margherita Pizza", price=Decimal("299")),
-    MenuItem(id="p2", name="Pepperoni Pizza", price=Decimal("359")),
-    MenuItem(id="p3", name="Farmhouse Pizza", price=Decimal("359")),
-    MenuItem(id="b1", name="Veggie Burger", price=Decimal("99")),
-    MenuItem(id="b2", name="Chicken Burger", price=Decimal("129")),
-    MenuItem(id="dr1", name="Cold Coffee", price=Decimal("69")),
-    MenuItem(id="dr2", name="Mango Shake", price=Decimal("79")),
-]
+def _row_to_menu_item(row) -> MenuItem:
+    """Convert a SQLite row (price stored in paise) into a MenuItem (price in rupees)."""
+    return MenuItem(
+        id=row["item_id"],
+        name=row["name"],
+        category=row["category"],
+        description=row["description"],
+        price=Decimal(row["price_paise"]) / 100,
+        is_veg=row["is_veg"],
+    )
 
 
 def get_menu() -> list[MenuItem]:
-    """Return the full menu."""
-    return MENU
+    """Return the full menu from the database."""
+    conn = get_connection()
+    rows = conn.execute("SELECT * FROM menu ORDER BY category, name").fetchall()
+    conn.close()
+    return [_row_to_menu_item(r) for r in rows]
 
 
 def get_item_by_id(item_id: str) -> MenuItem | None:
     """Look up a single menu item by its ID. Returns None if not found."""
-    for item in MENU:
-        if item.id == item_id:
-            return item
-    return None
+    conn = get_connection()
+    row = conn.execute(
+        "SELECT * FROM menu WHERE item_id = ?", (item_id,)
+    ).fetchone()
+    conn.close()
+    return _row_to_menu_item(row) if row else None
+
+
+# Ensure the database exists and is seeded, the moment this module is imported.
+init_db()

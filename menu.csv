@@ -1,0 +1,102 @@
+item_id,name,category,description,price,is_veg
+HB01,Espresso,Hot Beverages,"Single shot, rich and bold",99,Veg
+HB02,Double Espresso,Hot Beverages,Double shot for extra intensity,129,Veg
+HB03,Americano,Hot Beverages,Espresso with hot water,119,Veg
+HB04,Cappuccino,Hot Beverages,"Espresso, steamed milk, thick foam",149,Veg
+HB05,Cafe Latte,Hot Beverages,"Espresso with steamed milk, light foam",159,Veg
+HB06,Flat White,Hot Beverages,Espresso with velvety micro-foam milk,169,Veg
+HB07,Cortado,Hot Beverages,Equal parts espresso and steamed milk,149,Veg
+HB08,Macchiato,Hot Beverages,"Espresso ""stained"" with a dash of foam",129,Veg
+HB09,Mocha,Hot Beverages,"Espresso, chocolate, steamed milk",179,Veg
+HB10,Masala Chai,Hot Beverages,Traditional spiced Indian tea,89,Veg
+HB11,Filter Kaapi,Hot Beverages,South Indian filter coffee,99,Veg
+HB12,Green Tea,Hot Beverages,"Light, antioxidant-rich",99,Veg
+HB13,Chamomile Tea,Hot Beverages,"Caffeine-free, calming herbal tea",109,Veg
+HB14,Hot Chocolate,Hot Beverages,"Rich Belgian chocolate, steamed milk",169,Veg
+CB01,Iced Americano,Cold Beverages,Chilled espresso over ice,139,Veg
+CB02,Iced Latte,Cold Beverages,Chilled espresso with cold milk,169,Veg
+CB03,Cold Brew,Cold Beverages,"Slow-steeped, smooth and bold",189,Veg
+CB04,Cold Coffee,Cold Beverages,"Blended coffee, milk, ice cream",179,Veg
+CB05,Caramel Frappe,Cold Beverages,"Blended iced coffee, caramel drizzle",199,Veg
+CB06,Hazelnut Frappe,Cold Beverages,"Blended iced coffee, hazelnut syrup",199,Veg
+CB07,Mango Shake,Cold Beverages,"Fresh mango, milk, blended",159,Veg
+CB08,Oreo Shake,Cold Beverages,Oreo cookies blended with milk and ice cream,189,Veg
+CB09,Strawberry Shake,Cold Beverages,"Fresh strawberry, milk, blended",169,Veg
+CB10,Fresh Lime Soda,Cold Beverages,"Lime, soda, sweet or salted",99,Veg
+CB11,Iced Tea Peach,Cold Beverages,"Chilled black tea, peach flavor",129,Veg
+CB12,Iced Tea Lemon,Cold Beverages,"Chilled black tea, fresh lemon",129,Veg
+CB13,Watermelon Cooler,Cold Beverages,"Fresh watermelon, mint, lime",149,Veg
+CB14,Blue Lagoon Mocktail,Cold Beverages,"Blue curacao syrup, soda, lemon",159,Veg
+BK01,Butter Croissant,Bakery & Pastries,"Classic French, flaky and buttery",129,Veg
+BK02,Chocolate Croissant,Bakery & Pastries,Butter croissant with dark chocolate,149,Veg
+BK03,Almond Croissant,Bakery & Pastries,Filled and topped with almond cream,159,Veg
+BK04,Blueberry Muffin,Bakery & Pastries,"Soft muffin, fresh blueberries",119,Veg
+BK05,Chocolate Chip Muffin,Bakery & Pastries,"Soft muffin, loaded with choc chips",119,Veg
+BK06,Chocolate Brownie,Bakery & Pastries,"Fudgy, rich cocoa brownie",139,Veg
+BK07,Walnut Brownie,Bakery & Pastries,Fudgy brownie with roasted walnuts,149,Veg
+BK08,Cinnamon Roll,Bakery & Pastries,"Soft roll, cinnamon sugar, cream glaze",149,Veg
+BK09,Banana Bread,Bakery & Pastries,"Moist, homestyle banana loaf slice",109,Veg
+BK10,Red Velvet Slice,Bakery & Pastries,"Classic red velvet, cream cheese frosting",159,Veg
+BK11,Apple Danish,Bakery & Pastries,"Flaky pastry, spiced apple filling",139,Veg
+BK12,Glazed Donut,Bakery & Pastries,"Classic soft donut, sugar glaze",89,Veg
+BF01,Classic Eggs Benedict,Breakfast,"Poached eggs, hollandaise, English muffin",249,Non-Veg
+BF02,Avocado Toast,Breakfast,"Sourdough, smashed avocado, chili flakes",219,Veg
+BF03,Masala Omelette,Breakfast,"Three-egg omelette, onion, chili, coriander",179,Non-Veg
+BF04,Classic Pancakes,Breakfast,"Stack of three, maple syrup, butter",199,Veg
+BF05,Blueberry Pancakes,Breakfast,"Stack of three, fresh blueberries",219,Veg
+BF06,Granola Bowl,Breakfast,"Yogurt, house granola, seasonal fruit, honey",189,Veg
+BF07,French Toast,Breakfast,"Brioche, cinnamon, maple syrup",189,Veg
+BF08,Aloo Paratha with Curd,Breakfast,"Stuffed potato flatbread, curd, pickle",169,Veg
+BF09,Poha,Breakfast,"Flattened rice, peanuts, curry leaf tempering",129,Veg
+BF10,Scrambled Eggs on Toast,Breakfast,"Soft scrambled eggs, buttered toast",169,Non-Veg
+SW01,Grilled Veg Sandwich,Sandwiches & Wraps,"Bell peppers, corn, cheese, herb mayo",169,Veg
+SW02,Club Sandwich,Sandwiches & Wraps,"Chicken, egg, lettuce, tomato, triple-decker",229,Non-Veg
+SW03,Paneer Tikka Wrap,Sandwiches & Wraps,"Grilled paneer, mint chutney, onions",189,Veg
+SW04,Chicken Caesar Wrap,Sandwiches & Wraps,"Grilled chicken, romaine, parmesan, caesar dressing",219,Non-Veg
+SW05,Falafel Wrap,Sandwiches & Wraps,"Crispy falafel, hummus, fresh veggies",179,Veg
+SW06,Cheese Corn Sandwich,Sandwiches & Wraps,"Sweet corn, cheese, bell pepper",159,Veg
+SW07,Bombay Grilled Sandwich,Sandwiches & Wraps,"Potato, chutney, cheese, Mumbai street style",149,Veg
+SW08,Chicken Tikka Sandwich,Sandwiches & Wraps,"Spiced chicken tikka, mint mayo",219,Non-Veg
+SW09,Hummus & Veggie Wrap,Sandwiches & Wraps,"Hummus, fresh vegetables, whole wheat wrap",169,Veg
+SW10,Egg & Cheese Sandwich,Sandwiches & Wraps,"Fried egg, cheese, butter-toasted bread",159,Non-Veg
+SL01,Greek Salad,Salads,"Feta, olives, cucumber, tomato, olive oil",199,Veg
+SL02,Chicken Caesar Salad,Salads,"Grilled chicken, romaine, parmesan, croutons",239,Non-Veg
+SL03,Quinoa & Chickpea Salad,Salads,"Quinoa, chickpeas, herbs, lemon dressing",209,Veg
+SL04,Caprese Salad,Salads,"Fresh mozzarella, tomato, basil, balsamic",199,Veg
+SL05,Thai Peanut Salad,Salads,"Cabbage, carrot, peanut-lime dressing",189,Veg
+SN01,French Fries,Snacks & Sides,"Crispy, salted, served with ketchup",129,Veg
+SN02,Peri Peri Fries,Snacks & Sides,Fries tossed in peri peri seasoning,149,Veg
+SN03,Nachos & Salsa,Snacks & Sides,"Tortilla chips, cheese, salsa, jalapenos",169,Veg
+SN04,Onion Rings,Snacks & Sides,Crispy battered onion rings,139,Veg
+SN05,Garlic Bread,Snacks & Sides,"Toasted bread, garlic butter, herbs",129,Veg
+SN06,Loaded Cheese Fries,Snacks & Sides,Fries topped with melted cheese sauce,179,Veg
+DS01,New York Cheesecake,Desserts,"Classic baked cheesecake, berry compote",189,Veg
+DS02,Tiramisu,Desserts,"Coffee-soaked layers, mascarpone, cocoa",199,Veg
+DS03,Chocolate Lava Cake,Desserts,"Warm cake, molten chocolate center",179,Veg
+DS04,Vanilla Ice Cream,Desserts,Classic Madagascar vanilla - 2 scoops,99,Veg
+DS05,Chocolate Ice Cream,Desserts,Rich Belgian chocolate - 2 scoops,99,Veg
+DS06,Belgian Waffle,Desserts,"Crisp waffle, whipped cream, maple syrup",179,Veg
+DS07,Brownie Sundae,Desserts,"Warm brownie, ice cream, chocolate sauce",199,Veg
+DS08,Panna Cotta,Desserts,"Silky vanilla panna cotta, berry coulis",169,Veg
+BG01,Classic Veg Burger,Burgers,"Potato patty, lettuce, tomato, mayo",149,Veg
+BG02,Classic Chicken Burger,Burgers,"Grilled chicken patty, lettuce, mayo",189,Non-Veg
+BG03,Cheese Burst Veg Burger,Burgers,"Veg patty, double cheese, special sauce",169,Veg
+BG04,Spicy Paneer Burger,Burgers,"Crispy paneer patty, spicy mayo, onions",179,Veg
+BG05,BBQ Chicken Burger,Burgers,"Grilled chicken, BBQ sauce, caramelized onions",209,Non-Veg
+BG06,Mushroom Swiss Burger,Burgers,"Grilled mushroom, swiss cheese, garlic aioli",189,Veg
+BG07,Double Chicken Cheeseburger,Burgers,"Two chicken patties, double cheese",239,Non-Veg
+BG08,Egg Burger,Burgers,"Fried egg, cheese, patty, special sauce",179,Non-Veg
+PZ01,Margherita Pizza,Pizza,"Classic tomato, mozzarella, basil",249,Veg
+PZ02,Farmhouse Pizza,Pizza,"Onion, capsicum, tomato, mushroom",289,Veg
+PZ03,Peppy Paneer Pizza,Pizza,"Paneer, capsicum, red pepper",289,Veg
+PZ04,Pepperoni Pizza,Pizza,"Classic pepperoni, mozzarella",329,Non-Veg
+PZ05,Chicken Tikka Pizza,Pizza,"Chicken tikka, onion, mint mayo drizzle",339,Non-Veg
+PZ06,BBQ Chicken Pizza,Pizza,"BBQ chicken, onions, mozzarella",339,Non-Veg
+PZ07,Four Cheese Pizza,Pizza,"Mozzarella, cheddar, parmesan, blue cheese",319,Veg
+PZ08,Veggie Supreme Pizza,Pizza,"Olives, capsicum, onion, corn, mushroom",299,Veg
+PA01,Penne Arrabbiata,Pasta,"Spicy tomato, garlic, chili flakes",209,Veg
+PA02,Alfredo Pasta,Pasta,"Creamy white sauce, garlic, parmesan",229,Veg
+PA03,Chicken Alfredo Pasta,Pasta,Creamy white sauce with grilled chicken,259,Non-Veg
+PA04,Pesto Pasta,Pasta,"Basil pesto, cherry tomato, parmesan",229,Veg
+PA05,Mac and Cheese,Pasta,Classic elbow pasta with cheese sauce,189,Veg
+PA06,Spaghetti Aglio e Olio,Pasta,"Garlic, olive oil, chili, parsley",199,Veg
